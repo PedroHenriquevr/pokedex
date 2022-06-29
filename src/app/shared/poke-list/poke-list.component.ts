@@ -23,6 +23,36 @@ export class PokeListComponent implements OnInit {
         'fire',
       ],
     },
+    {
+      name: 'Bulbasaur',
+      thumbnail: 'https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/10007.png?raw=true',
+      categories: [
+        'poison',
+        'grass'
+      ],
+    },
+    {
+      name: 'Charmander',
+      thumbnail: 'https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/10018.png?raw=true',
+      categories: [
+        'fire',
+      ],
+    },
+    {
+      name: 'Bulbasaur',
+      thumbnail: 'https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/10007.png?raw=true',
+      categories: [
+        'poison',
+        'grass'
+      ],
+    },
+    {
+      name: 'Charmander',
+      thumbnail: 'https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/10018.png?raw=true',
+      categories: [
+        'fire',
+      ],
+    },
   ];
 
   constructor() { }
