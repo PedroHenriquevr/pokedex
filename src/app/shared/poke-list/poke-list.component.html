@@ -1,17 +1,13 @@
-<a class="pokemon">
-  <section class="pokemon__status">
-    <h2>
-      Bulbasaur
-    </h2>
-
-    <ul>
-      <li>Grass</li>
-      <li>Poison</li>
-    </ul>
-  </section>
-  <section class="pokemon__image">
-      <img src="assets/pokemon.png" alt="Bulbasaur">
-  </section>
-</a>
-
-
+<section class="pokemon_list">
+  <a class="pokemon" *ngFor="let pokemon of pokemons">
+    <section class="pokemon__status">
+      <h2>
+        {{pokemon.name}}
+      </h2>
+      <ul>
+        <li *ngFor="let category of pokemon.categories" [ngClass]="category">{{getCapitalizedCategory(category)}}</li>
+      </ul>
+    </section>
+    <img [src]="pokemon.thumbnail">
+  </a>
+</section>
