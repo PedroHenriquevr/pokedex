@@ -5,15 +5,22 @@ $padding: rem-calc(20);
 :host {
 	width: 100%;
 
+    .pokemon_list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
 		.pokemon {
 			position: relative;
 			display: flex;
+      justify-content: space-between;
 			background: var(--branco);
 
-			width: calc(49% - 2.5rem);
+			width: calc(59% - 2.5rem);
 			height: rem-calc(157 - 40);
 
-			margin-bottom: rem-calc(10);
+			margin: rem-calc(10) rem-calc(5) rem-calc(5) rem-calc(5);
 			padding: $padding;
 
 			border-radius: rem-calc(10);
@@ -36,7 +43,6 @@ $padding: rem-calc(20);
 					flex-direction: column;
 
 					li {
-						background: var(--cinza);
 						font-size: rem-calc(10);
 
 						display: flex;
@@ -62,13 +68,22 @@ $padding: rem-calc(20);
 				width: rem-calc(110);
 
 				right: $padding;
-				bottom: $padding;
+				bottom: 2rem;
 
-				background: url('../../../assets/bg/background-list-pokemons.svg') no-repeat;
-
-				img {
-					width: rem-calc(60);
-				}
 			}
 		}
+  }
+
+  .fire {
+    background-color: rgb(255, 123, 0);
+  }
+
+  .poison {
+    background-color: rgb(195, 0, 255);
+    color: white;
+  }
+
+  .grass {
+    background-color: rgb(49, 194, 49);
+    color: white;
   }
