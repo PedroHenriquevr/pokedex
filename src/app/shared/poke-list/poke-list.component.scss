@@ -8,6 +8,7 @@ $padding: rem-calc(20);
     justify-content: space-between;
     flex-wrap: wrap;
 
+<<<<<<< HEAD
     padding: $padding 0;
 
 
@@ -15,6 +16,25 @@ $padding: rem-calc(20);
       position: relative;
       display: flex;
       background: var(--branco);
+=======
+    .pokemon_list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+		.pokemon {
+			position: relative;
+			display: flex;
+      justify-content: space-between;
+			background: var(--branco);
+
+			width: calc(59% - 2.5rem);
+			height: rem-calc(157 - 40);
+
+			margin: rem-calc(10) rem-calc(5) rem-calc(5) rem-calc(5);
+			padding: $padding;
+>>>>>>> master
 
       width: calc(49% - 2.5rem);
       height: rem-calc(157 - 20);
@@ -34,8 +54,13 @@ $padding: rem-calc(20);
           font-weight: 700;
           text-transform: capitalize;
 
+<<<<<<< HEAD
           margin-bottom: rem-calc(10);
         }
+=======
+					li {
+						font-size: rem-calc(10);
+>>>>>>> master
 
         ul {
           display: flex;
@@ -60,6 +85,7 @@ $padding: rem-calc(20);
       &__image {
         position: absolute;
 
+<<<<<<< HEAD
         display: flex;
         align-items: center;
         justify-content: center;
@@ -79,3 +105,25 @@ $padding: rem-calc(20);
     }
   }
 }
+=======
+				right: $padding;
+				bottom: 2rem;
+
+			}
+		}
+  }
+
+  .fire {
+    background-color: rgb(255, 123, 0);
+  }
+
+  .poison {
+    background-color: rgb(195, 0, 255);
+    color: white;
+  }
+
+  .grass {
+    background-color: rgb(49, 194, 49);
+    color: white;
+  }
+>>>>>>> master

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <poke-search (emmitSearch)="getSearch($event)"></poke-search>
 
 <section class="listagem">
@@ -24,3 +25,18 @@
 </section>
 
 <img src="assets/error.png" alt="Deu erro na mostragem do pokemon" width="100%" *ngIf="apiError">
+=======
+<section class="pokemon_list">
+  <a class="pokemon" *ngFor="let pokemon of pokemons">
+    <section class="pokemon__status">
+      <h2>
+        {{pokemon.name}}
+      </h2>
+      <ul>
+        <li *ngFor="let category of pokemon.categories" [ngClass]="category">{{getCapitalizedCategory(category)}}</li>
+      </ul>
+    </section>
+    <img [src]="pokemon.thumbnail">
+  </a>
+</section>
+>>>>>>> master
